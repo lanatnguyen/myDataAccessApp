@@ -1,10 +1,9 @@
 ﻿using System;
+using SQLite;
 namespace myDataAccessApp.Persistence
 {
-    public class ISQLiteDb
+    public interface ISQLiteDb
     {
-        public ISQLiteDb()
-        {
-        }
+         SQLiteAsyncConnection GetConnection();
     }
 }
